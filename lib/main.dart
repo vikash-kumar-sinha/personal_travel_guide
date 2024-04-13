@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:personal_travel_guide/newInitialPage.dart';
 import 'login_signup.dart';
 import 'firebase_options.dart';
+import 'newInitialPage.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,13 +19,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Travel Guide',
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Login()
+      home:newInitial()
     );
   }
 }

@@ -59,7 +59,7 @@ return UiHelper.customAlertBox(context,"Data not found");
             backgroundColor: Colors.purple,
             radius: 25,
             backgroundImage: AssetImage('images/default_user_image.jpg'),
-          )
+          ),SizedBox(width: 10,)
         ],
         toolbarHeight: 100,
         automaticallyImplyLeading: false,
@@ -78,48 +78,52 @@ return UiHelper.customAlertBox(context,"Data not found");
           Expanded(flex:1,child: SizedBox()),
           Expanded(flex:2,child: SearchScreen()),
           Expanded(flex:1,child: SizedBox(height: 10,)),
-          Expanded(flex:4,child: Container(child: Row(
+          Expanded(flex:6,child: Container(child: Row(
             children: [
               Expanded(flex:1,child: SizedBox()),
-              Expanded(flex:3,child: rowWidget('images/default_user_image.jpg', 'Travel')),
+              Expanded(flex:3,child: rowWidget('images/Travel_icon.jpeg', 'Travel')),
               Expanded(flex:1,child: SizedBox(width: 5,)),
-              Expanded(flex:3,child: rowWidget('images/default_user_image.jpg', 'Hotels')),
+              Expanded(flex:3,child: rowWidget('images/hotel_icon.jpeg', 'Hotels')),
               Expanded(flex:1,child: SizedBox(width: 5,)),
-              Expanded(flex:3,child: rowWidget('images/default_user_image.jpg', 'Flights')),
+              Expanded(flex:3,child: rowWidget('images/flight_icon.jpeg', 'Flights')),
               Expanded(flex:1,child: SizedBox(width: 5,)),
-              Expanded(flex:3,child: rowWidget('images/default_user_image.jpg', 'Car Rental')),
+              Expanded(flex:3,child: rowWidget('images/rent_car.jpeg', 'Car Rental')),
               Expanded(flex:1,child: SizedBox(width: 5,)),
             ],
           ),)),
           Expanded(flex:2,child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment:MainAxisAlignment.spaceBetween,
-              children: [
-                Text('Popular'),
-                Text('see all >>')
-              ],
+            child: Container(
+              child: Row(
+                mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Popular',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                  Text('see all >>',style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500,color: Colors.blue),)
+                ],
+              ),
             ),
           )),
-          Expanded(flex:6,child: SingleChildScrollView(
+          Flexible(flex:10,child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                popularWidget('images/login_image.jpeg', 'chennai', 'India'),
+                myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
                 SizedBox(width: 5,),
-                popularWidget('images/login_image.jpeg', 'chennai', 'India'),
+                myImageContainer('images/stupa_dim.jpeg', 'Bihar', 'India',Colors.green),
                 SizedBox(width: 5,),
-                popularWidget('images/login_image.jpeg', 'chennai', 'India'),
+                myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
                 SizedBox(width: 5,),
-                popularWidget('images/login_image.jpeg', 'chennai', 'India'),
+                myImageContainer('images/stupa_dim.jpeg', 'Bihar', 'India',Colors.green),
+
                 SizedBox(width: 5,),
-                popularWidget('images/login_image.jpeg', 'chennai', 'India'),
+                myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
+
                 SizedBox(width: 5,),
 
               ],
             ),
           )),
-          Expanded(flex:2,child: SizedBox())
+         // Expanded(flex:1,child: SizedBox())
 
 
         ],

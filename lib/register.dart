@@ -6,6 +6,7 @@ import 'package:gap/gap.dart';
 //import 'package:water_ordering_app/login.dart';
 //import 'package:water_ordering_app/orderList.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:personal_travel_guide/home.dart';
 import 'package:personal_travel_guide/login_signup.dart';
 import 'extraUI.dart';
 
@@ -44,7 +45,7 @@ class _registration_pageState extends State<registration_page> {
       UserCredential? userCrediantial;
       try{
         userCrediantial=await FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password).then((value) {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>const Login()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> home_page(currentUserEmail:email)));
           _saveProfile(userId: email,name: nameController.text.toString(),phone: phoneController.text.toString(),email: email);
           return null;
         });
