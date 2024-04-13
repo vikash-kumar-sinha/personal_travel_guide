@@ -5,8 +5,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_travel_guide/extraUI.dart';
+import 'package:personal_travel_guide/travel.dart';
 import 'extraUI.dart';
 import 'search.dart';
+import 'travel.dart';
 
 class home_page extends StatefulWidget {
   const home_page({super.key,required this.currentUserEmail});
@@ -81,7 +83,22 @@ return UiHelper.customAlertBox(context,"Data not found");
           Expanded(flex:6,child: Container(child: Row(
             children: [
               Expanded(flex:1,child: SizedBox()),
-              Expanded(flex:3,child: rowWidget('images/Travel_icon.jpeg', 'Travel')),
+              Expanded(flex:3,child: Column(
+                children: [
+                  Expanded(flex: 2,
+                    child: TextButton(
+                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context)=>Travel()));},
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        radius: 30,
+                        backgroundImage: AssetImage('images/Travel_icon.jpeg'),
+                      ),
+                    ),
+                  ),
+                  Expanded(flex:1,child: SizedBox(height: 5,)),
+                  Expanded(flex:2,child: Text('Travel',style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),))
+                ],
+              )),
               Expanded(flex:1,child: SizedBox(width: 5,)),
               Expanded(flex:3,child: rowWidget('images/hotel_icon.jpeg', 'Hotels')),
               Expanded(flex:1,child: SizedBox(width: 5,)),
@@ -109,11 +126,11 @@ return UiHelper.customAlertBox(context,"Data not found");
               children: [
                 myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
                 SizedBox(width: 5,),
-                myImageContainer('images/stupa_dim.jpeg', 'Bihar', 'India',Colors.green),
+                myImageContainer('images/stupa_dim.jpg', 'Bihar', 'India',Colors.green),
                 SizedBox(width: 5,),
                 myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
                 SizedBox(width: 5,),
-                myImageContainer('images/stupa_dim.jpeg', 'Bihar', 'India',Colors.green),
+                myImageContainer('images/stupa_dim.jpg', 'Bihar', 'India',Colors.green),
 
                 SizedBox(width: 5,),
                 myImageContainer('images/banaras.jpeg', 'Banaras', 'Utter Pradesh',Colors.orangeAccent),
