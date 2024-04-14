@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'plan.dart';
 
 class Travel extends StatefulWidget {
   const Travel({super.key});
@@ -175,7 +176,9 @@ class _TravelState extends State<Travel> {
                     children: [
                      // Text('Transport'),
                       SizedBox(height: 27,),
-                      Container(width:300,child: Card(color:Colors.teal,child: TextButton(onPressed: (){},child: Text('Plan'),)))
+                      Container(width:300,child: Card(color:Colors.teal,child: TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>myPlan(
+               adults: personNumber.toString(),checkinDate: _selectedDatePicked.toString(),checkoutDate: _selectedDateReturn.toString(),placeInput: cityController.text,
+                      )))},child: Text('Plan'),)))
 
                     ],)),
                 ],
