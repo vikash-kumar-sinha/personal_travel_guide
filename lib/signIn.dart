@@ -54,6 +54,7 @@ class _login_pageState extends State<login_page> {
         child: CircularProgressIndicator(),
       ),
     ):Scaffold(
+      backgroundColor: Colors.blue[300],
       body: SafeArea(
         child: Expanded(
           child: ListView(
@@ -61,11 +62,12 @@ class _login_pageState extends State<login_page> {
             // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Expanded(flex:4,child: SizedBox()),
-              Expanded(flex: 7,child: Image.asset('images/login_image.jpeg',height: 200.0,width: 200.0,)),
+              Expanded(flex: 7,child: Image.asset('images/SAFARNAMA1.png',height: 200.0,width: 200.0,)),
 
               const Expanded(flex: 3,
                 child: Text('Welcome back',textAlign: TextAlign.center,style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                     fontSize: 25,
                     //fontFamily: 'heading'
                 ),),
@@ -84,11 +86,11 @@ class _login_pageState extends State<login_page> {
                     decoration: InputDecoration(
                         hintText: 'E-mail',
                         hintStyle: const TextStyle(
-                            color: Colors.grey,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 15,//fontFamily: 'salsa'
                         ),
-                        prefixIcon: const Icon(Icons.email,color: Colors.blue,),
+                        prefixIcon: const Icon(Icons.email,color: Colors.purple,),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                           borderSide: const BorderSide(
@@ -132,12 +134,12 @@ class _login_pageState extends State<login_page> {
                         ),
                         hintText: 'Password',
                         hintStyle: const TextStyle(
-                            color: Colors.grey,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                             fontFamily: 'salsa'
                         ),
-                        prefixIcon: const Icon(Icons.lock,color: Colors.blue,),
+                        prefixIcon: const Icon(Icons.lock,color: Colors.purple,),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                           borderSide: const BorderSide(

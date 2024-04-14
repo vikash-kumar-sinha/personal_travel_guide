@@ -99,6 +99,7 @@ class _registration_pageState extends State<registration_page> {
         child: CircularProgressIndicator(),
       ),
     ):Scaffold(
+      backgroundColor: Colors.blue[300],
       appBar: AppBar(
         backgroundColor: Colors.purple,
         foregroundColor: Colors.black87,
@@ -136,12 +137,12 @@ class _registration_pageState extends State<registration_page> {
                       decoration: InputDecoration(
                           hintText: 'Name',
                           hintStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
                               //fontFamily: 'salsa'
                           ),
-                          prefixIcon: const Icon(Icons.person,color: Colors.blue,),
+                          prefixIcon: const Icon(Icons.person,color: Colors.purple,),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
@@ -177,12 +178,12 @@ class _registration_pageState extends State<registration_page> {
                       decoration: InputDecoration(
                           hintText: 'E-mail',
                           hintStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                               //fontFamily: 'salsa',
                               fontWeight: FontWeight.bold,
                               fontSize: 15
                           ),
-                          prefixIcon: const Icon(Icons.email,color: Colors.blue,),
+                          prefixIcon: const Icon(Icons.email,color: Colors.purple,),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
@@ -218,12 +219,12 @@ class _registration_pageState extends State<registration_page> {
                       decoration: InputDecoration(
                           hintText: 'Phone',
                           hintStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                               //fontFamily: 'salsa',
                               fontWeight: FontWeight.bold,
                               fontSize: 15
                           ),
-                          prefixIcon: const Icon(Icons.phone,color: Colors.blue,),
+                          prefixIcon: const Icon(Icons.phone,color: Colors.purple,),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
@@ -260,12 +261,12 @@ class _registration_pageState extends State<registration_page> {
                       decoration: InputDecoration(
                           hintText: 'Password',
                           hintStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                              // fontFamily: 'salsa',
                               fontWeight: FontWeight.bold,
                               fontSize: 15
                           ),
-                          prefixIcon: const Icon(Icons.lock,color: Colors.blue,),
+                          prefixIcon: const Icon(Icons.lock,color: Colors.purple,),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
@@ -308,12 +309,12 @@ class _registration_pageState extends State<registration_page> {
 
                           hintText: 'Confirm Password',
                           hintStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                               //fontFamily: 'salsa',
                               fontWeight: FontWeight.bold,
                               fontSize: 15
                           ),
-                          prefixIcon: const Icon(Icons.lock,color: Colors.blue,),
+                          prefixIcon: const Icon(Icons.lock,color: Colors.purple,),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(

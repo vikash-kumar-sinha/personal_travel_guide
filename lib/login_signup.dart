@@ -12,13 +12,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
+      backgroundColor: Colors.blue[300],
       body: Center(
         child: Column(
 
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Expanded(flex:3,child: SizedBox()),
-            Expanded(flex:5,child: Image.asset('images/login_image.jpeg')),
+            Expanded(flex:2,child: SizedBox()),
+            Expanded(flex:6,child: Image.asset('images/SAFARNAMA1.png',)),
             Expanded(flex:1,child: SizedBox(height: 10,)),
             Expanded(flex:1,child: Container(height: 45,
                 width: 200,
