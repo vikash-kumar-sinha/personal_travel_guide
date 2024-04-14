@@ -10,3 +10,5 @@ Login <br>
 Use the app <br>
 e) Libraries: No libraries used<br>
 f) Declaration of the previous work: No previous work is used<br>
+
+Screen recording of app: https://drive.google.com/file/d/1I_XpLkm-HX039Nh8mbl3KvszcsjyzzeO/view?usp=sharing
