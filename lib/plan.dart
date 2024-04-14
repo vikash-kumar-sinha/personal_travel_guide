@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
 
 
 class myPlan extends StatefulWidget {
-  const myPlan({super.key,required this.adults,required this.checkinDate,required this.checkoutDate,required this.placeInput});
+   myPlan({super.key,required this.adults,required this.checkinDate,required this.checkoutDate,required this.placeInput});
   String placeInput;
   String checkinDate;
   String checkoutDate;
