@@ -178,7 +178,7 @@ class _TravelState extends State<Travel> {
                       SizedBox(height: 27,),
                       Container(width:300,child: Card(color:Colors.teal,child: TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>myPlan(
                adults: personNumber.toString(),checkinDate: _selectedDatePicked.toString(),checkoutDate: _selectedDateReturn.toString(),placeInput: cityController.text,
-                      )))},child: Text('Plan'),)))
+                      )));},child: Text('Plan'),)))
 
                     ],)),
                 ],
