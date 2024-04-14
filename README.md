@@ -8,4 +8,4 @@ Create an account
 Login 
 Use the app 
 e) Libraries: No libraries used
-f) Declaration of the previous work: No previous work is used
+f) Declaration of the previous work: No previous work is used.
